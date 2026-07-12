@@ -34,13 +34,20 @@
   margin-bottom: 0.6rem;
 }
 
-.notepad-nav ul ul {
+/* Sub-lists are hidden by default */
+.notepad-nav .sub-nav {
+  display: none;
   margin-top: 0.35rem;
   padding-left: 1rem;
   border-left: 2px solid #e0dcc8;
 }
 
-.notepad-nav ul ul li {
+/* Show the sub-list only while hovering its parent <li> */
+.notepad-nav li:hover > .sub-nav {
+  display: block;
+}
+
+.notepad-nav .sub-nav li {
   margin-bottom: 0.3rem;
   font-size: 0.9rem;
 }
