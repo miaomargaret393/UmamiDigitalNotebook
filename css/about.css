@@ -3,16 +3,15 @@
    Text blob next to the photo album, side by side.
    ========================================= */
 .about-layout {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: start;
 }
 
-.about-text {
-  flex: 1 1 260px;
-}
-
-.about-photos {
-  flex: 1 1 260px;
+/* Stack into one column on narrow screens */
+@media (max-width: 700px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
 }
