@@ -10,6 +10,17 @@
   border-radius: 6px;
   padding: 1rem 1.25rem;
   max-width: 220px;
+
+  /* Sticky-note visual treatment*/
+  position: fixed; 
+  top: 1rem; 
+  right: 1rem;
+  z-index: 100;
+
+  /* in case the list ever grows taller than the screen */
+  max-height: 90vh;
+  overflow-y: auto;
+
 }
 
 .notepad-nav ul {
@@ -18,6 +29,7 @@
   padding: 0;
 }
 
+/*this part is responsible for the spacing between the list items in the navigation menu*/
 .notepad-nav > ul > li {
   margin-bottom: 0.6rem;
 }
