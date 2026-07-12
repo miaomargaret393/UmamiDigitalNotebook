@@ -11,15 +11,24 @@
   padding: 1rem 1.25rem;
   max-width: 220px;
 
-  /* Sticky-note visual treatment: pinned to viewport, ignores scroll */
+  /* Sticky-note visual treatment: pinned to viewport, ignores scroll,
+     but horizontally aligned to the content column's right edge
+     rather than the raw browser window edge. */
   position: fixed;
   top: 1rem;
-  right: 1rem;
+  right: calc((100vw - var(--content-max-width)) / 2 + 1rem);
   z-index: 100;
 
   /* in case the list ever grows taller than the screen */
   max-height: 90vh;
   overflow-y: auto;
+  /* Once the window is narrower than the content column anyway,
+   the column fills the full width, so just hug the real edge. */
+  @media (max-width: 960px) {
+    .notepad-nav {
+      right: 1rem;
+    }
+  }
 }
 
 .notepad-nav ul {
