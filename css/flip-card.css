@@ -1,0 +1,64 @@
+/* =========================================
+   FLIP CARDS
+   Shared component for the Artistic project
+   gallery and the About Me photo album.
+   Click a card to flip it and reveal the back.
+   ========================================= */
+.flip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.flip-card {
+  aspect-ratio: 3 / 2;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* JS adds/removes this class on click */
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 6px;
+  border: 1px solid #e0dcc8;
+  overflow: hidden;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.flip-card-back {
+  background-color: #fffef7;
+  transform: rotateY(180deg);
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.flip-card-back a {
+  color: var(--color-accent);
+}

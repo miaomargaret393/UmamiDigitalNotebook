@@ -1,0 +1,18 @@
+/* =========================================
+   ABOUT PAGE LAYOUT
+   Text blob next to the photo album, side by side.
+   ========================================= */
+.about-layout {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.about-text {
+  flex: 1 1 260px;
+}
+
+.about-photos {
+  flex: 1 1 260px;
+}

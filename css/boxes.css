@@ -1,0 +1,29 @@
+/* =========================================
+   NOTEBOOK BOX
+   A general-purpose bordered container matching
+   the notepad-nav aesthetic. Used now for Home page
+   gif placeholders; reusable later for things like
+   the "Current Obsessions" list.
+   ========================================= */
+.notebook-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.notebook-box {
+  background-color: #fffef7;
+  border: 1px solid #e0dcc8;
+  border-radius: 6px;
+  padding: 0.75rem;
+  max-width: 260px;
+}
+
+.notebook-box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
