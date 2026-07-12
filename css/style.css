@@ -1,0 +1,28 @@
+@import url("base.css");
+@import url("header.css");
+@import url("nav.css");
+@import url("footer.css");
+
+
+body {
+  background-color: pink;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

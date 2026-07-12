@@ -8,23 +8,37 @@
 <body>
 
   <header>
-    <h1>Margaret</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <h1>Projects n stuff</h1>
+    {% include nav.html %}
   </header>
 
   <main>
     <h2>Projects</h2>
     <p>Art and research projects coming soon — filter feature to be added later.</p>
+
+    <section id="research">
+      <h3>Research</h3>
+      <p>Details about research projects.</p>
+    </section>
+
+    <section id="artistic">
+      <h3>Artistic</h3>
+      <p>Details about artistic projects.</p>
+    </section>
+
+    <section id="tinkering">
+      <h3>Tinkering</h3>
+      <p>Details about tinkering projects.</p>
+    </section>
+
+    <section id="side-quests">
+      <h3>Side Quests</h3>
+      <p>Details about side quests.</p> 
+
+    
   </main>
 
-  <footer>
-    <p>&copy; 2026 Margaret</p>
-  </footer>
+  {% include footer.html %}
 
 </body>
 </html>

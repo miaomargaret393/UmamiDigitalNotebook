@@ -1,0 +1,12 @@
+/* =========================================
+   HEADER LAYOUT
+   Puts the page title and notepad-nav
+   side by side, roughly matching the wireframe.
+   ========================================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

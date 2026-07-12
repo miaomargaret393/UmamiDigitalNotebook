@@ -1,0 +1,44 @@
+/* =========================================
+   FOOTER VARIABLES
+   ========================================= */
+:root {
+  --color-accent: #b06a7a;      /* icon + hover color */
+  --color-accent-hover: #7a3f4d;
+  --color-footer-bg: #faf6f2;
+  --color-text-muted: #777;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+.site-footer {
+  margin-top: 3rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  background-color: var(--color-footer-bg);
+  border-top: 1px solid #e5ddd5;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.icon-link {
+  color: var(--color-accent);
+  display: inline-flex;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.icon-link:hover {
+  color: var(--color-accent-hover);
+  transform: translateY(-2px);
+}
+
+.footer-copyright {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}

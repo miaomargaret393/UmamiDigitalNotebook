@@ -1,0 +1,44 @@
+/* =========================================
+   NAV (notepad-nav)
+   Starts plain/functional. Sticky-note visual
+   treatment (spiral binding, rotation, etc.)
+   gets layered on in a later polish pass.
+   ========================================= */
+.notepad-nav {
+  background-color: #fffef7;
+  border: 1px solid #e0dcc8;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  max-width: 220px;
+}
+
+.notepad-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.notepad-nav > ul > li {
+  margin-bottom: 0.6rem;
+}
+
+.notepad-nav ul ul {
+  margin-top: 0.35rem;
+  padding-left: 1rem;
+  border-left: 2px solid #e0dcc8;
+}
+
+.notepad-nav ul ul li {
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.notepad-nav a {
+  color: #4a4032;
+  text-decoration: none;
+}
+
+.notepad-nav a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
