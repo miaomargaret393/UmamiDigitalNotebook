@@ -23,6 +23,87 @@ nav a {
   margin-right: 10px;
 }
 
+.entry {
+  background: #111;
+  color: #fff;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  overflow: hidden; /* keeps rounded corners clean while content grows/shrinks */
+}
+
+.entry-toggle {
+  width: 100%;
+  background: none;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+}
+
+.entry-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.entry-date {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-left: auto;
+  margin-right: 16px;
+}
+
+.entry-icon {
+  font-size: 1.4rem;
+  transition: transform 0.35s ease;
+}
+
+/* rotate the + into an x when open */
+.entry-toggle[aria-expanded="true"] .entry-icon {
+  transform: rotate(45deg);
+}
+
+/* --- the fluid part --- */
+.entry-content {
+  display: grid;
+  grid-template-rows: 0fr; /* collapsed */
+  transition: grid-template-rows 0.4s ease;
+}
+
+.entry-toggle[aria-expanded="true"] + .entry-content {
+  grid-template-rows: 1fr; /* expanded */
+}
+
+.entry-content-inner {
+  overflow: hidden; /* required for the grid trick to work */
+  min-height: 0;
+  padding: 0 24px;
+}
+
+.entry-toggle[aria-expanded="true"] + .entry-content .entry-content-inner {
+  padding-bottom: 24px;
+}
+
+.entry-tag {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.entry-link {
+  display: inline-block;
+  margin-top: 16px;
+  background: #eee;
+  color: #111;
+  padding: 10px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
 
 nav a:hover {
   text-decoration: underline;
