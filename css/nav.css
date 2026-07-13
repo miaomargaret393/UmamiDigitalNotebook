@@ -12,6 +12,7 @@
    column's right edge rather than the raw
    browser window edge.
    ----------------------------------------- */
+
 .notepad-nav {
   background-color: #fffef7;
   border: 1px solid #e0dcc8;
@@ -54,7 +55,8 @@
 /* -----------------------------------------
    Sub-nav (Projects / Resume dropdowns)
    Hidden by default; shown on hover (desktop)
-   or via .open class (added by toggle.js on click/tap)
+   or via .open class (added by toggle.js on click/tap
+   of the Projects/Resume link itself)
    ----------------------------------------- */
 .notepad-nav .sub-nav {
   display: none;
@@ -71,35 +73,6 @@
 .notepad-nav li:hover > .sub-nav,
 .notepad-nav li.open > .sub-nav {
   display: block;
-}
-
-/* -----------------------------------------
-   Toggle button (the ▾ arrow)
-   Button itself is empty in the HTML —
-   the arrow glyph is drawn here via ::after
-   so it can rotate when .open is toggled.
-   ----------------------------------------- */
-.nav-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0 0.25rem;
-  font-size: 0.7rem;
-  color: #4a4032;
-}
-
-.nav-toggle::after {
-  content: "▾";
-  display: inline-block;
-  transition: transform 0.2s ease;
-}
-
-.nav-toggle:hover::after {
-  color: var(--color-accent);
-}
-
-li.open > .nav-toggle::after {
-  transform: rotate(180deg);
 }
 
 /* -----------------------------------------

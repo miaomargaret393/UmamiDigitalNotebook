@@ -1,16 +1,32 @@
+/* =========================================
+   COLLAPSIBLE SECTIONS
+   Used on Projects/Resume section headings.
+   Click a heading to show/hide its content.
+   ========================================= */
+
+/* -----------------------------------------
+   Heading (the clickable trigger)
+   ----------------------------------------- */
 .collapsible-section h3 {
   cursor: pointer;
   user-select: none;
+  font-weight: bold;
+  color: #4a4032;
+  text-decoration: none;
 }
 
+.collapsible-section h3:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* -----------------------------------------
+   Content (hidden by default, shown when .open)
+   ----------------------------------------- */
 .collapsible-content {
   display: none;
 }
 
 .collapsible-section.open .collapsible-content {
   display: block;
-}
-
-.collapsible-section h3:hover {
-  text-decoration: underline;
 }
