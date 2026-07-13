@@ -1,0 +1,25 @@
+.collapsible-section h3 {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  user-select: none; /* prevents text highlighting on repeated clicks */
+}
+
+.collapsible-section h3::after {
+  content: "▾";
+  font-size: 0.7rem;
+  transition: transform 0.2s ease;
+}
+
+.collapsible-section.open h3::after {
+  transform: rotate(180deg);
+}
+
+.collapsible-content {
+  display: none;
+}
+
+.collapsible-section.open .collapsible-content {
+  display: block;
+}
