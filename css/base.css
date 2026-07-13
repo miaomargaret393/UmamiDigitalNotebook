@@ -1,5 +1,32 @@
 :root {
   --content-max-width: 960px;
+
+  /* --- raw palette --- */
+  --color-peach: #FFCA95;
+  --color-coral: #FF7873;
+  --color-magenta: #E22F80;
+  --color-purple: #8140DC;
+
+  /* --- semantic roles --- */
+  --color-bg: #f1ece2;
+  --color-text: #2b2430;
+  --color-accent: #E22F80;
+  --color-accent-light: #FFCA95;
+  --color-border: #f2c9c7;
+  --color-muted: #8d7e90;
+}
+
+h1, h2, p {
+  font-family: "cambria", "cambria", "cambria";
+  color: var(--color-text);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 main p {
