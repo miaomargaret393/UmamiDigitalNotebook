@@ -10,3 +10,7 @@
 .collapsible-section.open .collapsible-content {
   display: block;
 }
+
+.collapsible-section h3:hover {
+  text-decoration: underline;
+}
