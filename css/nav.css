@@ -4,6 +4,14 @@
    treatment (spiral binding, rotation, etc.)
    gets layered on in a later polish pass.
    ========================================= */
+
+/* -----------------------------------------
+   Container + positioning
+   Pinned to the viewport (ignores scroll),
+   but horizontally aligned to the content
+   column's right edge rather than the raw
+   browser window edge.
+   ----------------------------------------- */
 .notepad-nav {
   background-color: #fffef7;
   border: 1px solid #e0dcc8;
@@ -11,9 +19,6 @@
   padding: 1rem 1.25rem;
   max-width: 220px;
 
-  /* Sticky-note visual treatment: pinned to viewport, ignores scroll,
-     but horizontally aligned to the content column's right edge
-     rather than the raw browser window edge. */
   position: fixed;
   top: 1rem;
   right: calc((100vw - var(--content-max-width)) / 2 + 1rem);
@@ -22,15 +27,19 @@
   /* in case the list ever grows taller than the screen */
   max-height: 90vh;
   overflow-y: auto;
-  /* Once the window is narrower than the content column anyway,
+}
+
+/* Once the window is narrower than the content column anyway,
    the column fills the full width, so just hug the real edge. */
-  @media (max-width: 960px) {
-    .notepad-nav {
-      right: 1rem;
-    }
+@media (max-width: 960px) {
+  .notepad-nav {
+    right: 1rem;
   }
 }
 
+/* -----------------------------------------
+   List reset
+   ----------------------------------------- */
 .notepad-nav ul {
   list-style: none;
   margin: 0;
@@ -42,7 +51,11 @@
   margin-bottom: 0.6rem;
 }
 
-/* Sub-lists are hidden by default */
+/* -----------------------------------------
+   Sub-nav (Projects / Resume dropdowns)
+   Hidden by default; shown on hover (desktop)
+   or via .open class (added by toggle.js on click/tap)
+   ----------------------------------------- */
 .notepad-nav .sub-nav {
   display: none;
   margin-top: 0.35rem;
@@ -55,28 +68,43 @@
   font-size: 0.9rem;
 }
 
-/* Show the sub-list while hovering (desktop), OR when JS has added .open (click/tap) */
 .notepad-nav li:hover > .sub-nav,
 .notepad-nav li.open > .sub-nav {
   display: block;
 }
 
-/* Toggle button (the little ▾ arrow) */
+/* -----------------------------------------
+   Toggle button (the ▾ arrow)
+   Button itself is empty in the HTML —
+   the arrow glyph is drawn here via ::after
+   so it can rotate when .open is toggled.
+   ----------------------------------------- */
 .nav-toggle {
   background: none;
   border: none;
   cursor: pointer;
-  color: #4a4032;
-  font-size: 0.8rem;
-  margin-left: 0.25rem;
   padding: 0 0.25rem;
+  font-size: 0.7rem;
+  color: #4a4032;
 }
 
-.nav-toggle:hover {
+.nav-toggle::after {
+  content: "▾";
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.nav-toggle:hover::after {
   color: var(--color-accent);
 }
 
-/* Link styling */
+li.open > .nav-toggle::after {
+  transform: rotate(180deg);
+}
+
+/* -----------------------------------------
+   Link styling
+   ----------------------------------------- */
 .notepad-nav a {
   color: #4a4032;
   text-decoration: none;
