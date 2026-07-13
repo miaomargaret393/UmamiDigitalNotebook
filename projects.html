@@ -18,52 +18,61 @@
     <h2>Projects</h2>
     <p>Art and research projects coming soon — filter feature to be added later.</p>
 
-    <section id="research">
-      <h3>Research</h3>
-      <p>Details about research projects.</p>
-    </section>
-
-    <section id="artistic">
-        <h3>Artistic</h3>
-        <div class="flip-grid">
-
-            <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                <img src="Images/turbo-granny-dandadan.gif" alt="Placeholder artwork 1">
-                </div>
-                <div class="flip-card-back">
-                <p>Placeholder description for this piece.</p>
-                <a href="#">View full image</a>
-                </div>
-            </div>
-            </div>
-
-            <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                <img src="Images/turbo-granny-dandadan-hairdryer.gif" alt="Placeholder artwork 2">
-                </div>
-                <div class="flip-card-back">
-                <p>Placeholder description for this piece.</p>
-                <a href="#">View full image</a>
-                </div>
-            </div>
-            </div>
-
-            <!-- copy a .flip-card block above to add more -->
-
+    <section id="research" class="collapsible-section">
+        <h3>Research <button class="toggle-trigger section-toggle" data-toggle-target="#research" aria-label="Toggle Research" aria-expanded="false">▾</button></h3>
+        <div class="collapsible-content">
+            <p>Details about research projects.</p>
         </div>
     </section>
 
-    <section id="tinkering">
-        <h3>Tinkering</h3>
-        <p>Details about tinkering projects.</p>
+    <section id="artistic" class ="collapsible-section">
+        <h3>Artistic <button class="toggle-trigger section-toggle" data-toggle-target="#artistic" aria-label="Toggle Artistic" aria-expanded="false">▾</button></h3>
+        <div class="collapsible-content">
+            <div class="flip-grid">
+
+                        <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                            <img src="Images/turbo-granny-dandadan.gif" alt="Placeholder artwork 1">
+                            </div>
+                            <div class="flip-card-back">
+                            <p>Placeholder description for this piece.</p>
+                            <a href="#">View full image</a>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                            <img src="Images/turbo-granny-dandadan-hairdryer.gif" alt="Placeholder artwork 2">
+                            </div>
+                            <div class="flip-card-back">
+                            <p>Placeholder description for this piece.</p>
+                            <a href="#">View full image</a>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- copy a .flip-card block above to add more -->
+
+                    </div>
+        </div>
+        
     </section>
 
-    <section id="side-quests">
-    <h3>Side Quests</h3>
-     <p>Details about side quests.</p> 
+    <section id="tinkering" class="collapsible-section">
+        <h3>Tinkering <button class="toggle-trigger section-toggle" data-toggle-target="#tinkering" aria-label="Toggle Tinkering" aria-expanded="false">▾</button></h3>
+        <div class="collapsible-content">
+            <p>Details about tinkering projects.</p>
+        </div>
+    </section>
+
+    <section id="side-quests" class="collapsible-section">
+        <h3>Side Quests <button class="toggle-trigger section-toggle" data-toggle-target="#side-quests" aria-label="Toggle Side Quests" aria-expanded="false">▾</button></h3>
+        <div class="collapsible-content">
+            <p>Details about side quests.</p> 
+        </div>
     </section> 
 
         
