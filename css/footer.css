@@ -1,22 +1,18 @@
 /* =========================================
-   FOOTER VARIABLES
-   ========================================= */
-:root {
-  --color-accent: #b06a7a;      /* icon + hover color */
-  --color-accent-hover: #7a3f4d;
-  --color-footer-bg: #faf6f2;
-  --color-text-muted: #777;
-}
-
-/* =========================================
    FOOTER
+   Uses the shared palette from base.css.
+   Footer-specific colors are scoped to
+   .site-footer so they don't leak globally.
    ========================================= */
 .site-footer {
+  --footer-accent: var(--color-coral);
+  --footer-accent-hover: var(--color-magenta);
+
   margin-top: 3rem;
   padding: 1.5rem 1rem;
   text-align: center;
-  background-color: var(--color-footer-bg);
-  border-top: 1px solid #e5ddd5;
+  background-color: var(--color-bg);
+  border-top: 1px solid var(--color-border);
 }
 
 .icon-link img {
@@ -34,18 +30,18 @@
 }
 
 .icon-link {
-  color: var(--color-accent);
+  color: var(--footer-accent);
   display: inline-flex;
   transition: color 0.15s ease, transform 0.15s ease;
 }
 
 .icon-link:hover {
-  color: var(--color-accent-hover);
+  color: var(--footer-accent-hover);
   transform: translateY(-2px);
 }
 
 .footer-copyright {
   font-size: 0.85rem;
-  color: var(--color-text-muted);
+  color: var(--color-muted);
   margin: 0;
 }
