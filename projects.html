@@ -16,85 +16,115 @@
 
   <main>
     <h2>Projects</h2>
-    <p>Art and research projects coming soon — filter feature to be added later.</p>
 
-    <div class="entry">
-    <button class="entry-toggle" aria-expanded="false">
-        <span class="entry-title">example</span>
-        <span class="entry-date">7/12/2026</span>
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="research">Research</button>
+      <button class="filter-btn" data-filter="art">Art</button>
+      <button class="filter-btn" data-filter="tinkering">Tinkering</button>
+      <button class="filter-btn" data-filter="side-quests">Side Quests</button>
+    </div>
+
+    <!-- RESEARCH example -->
+    <div class="entry" data-tags="research python">
+      <button class="entry-toggle" aria-expanded="false">
+        <span class="entry-title">Example Research Project</span>
+        <span class="entry-date">1/2026</span>
         <span class="entry-icon">+</span>
-    </button>
-
-    <div class="entry-content">
+      </button>
+      <div class="entry-content">
         <div class="entry-content-inner">
-        <p class="entry-tag">meow</p>
-        <p>
-            something
-        </p>
-        <a href="#" class="entry-link">Check it out</a>
+          <div class="entry-tags">
+            <span class="tag">research</span>
+            <span class="tag">python</span>
+          </div>
+          <p>A short description of the research project goes here.</p>
+          <a href="#" class="entry-link">Check it out</a>
         </div>
+      </div>
     </div>
-    </div>
 
-    <section id="research" class="collapsible-section">
-        <h3 class="toggle-trigger" data-toggle-target="#research">Research</h3>
-        <div class="collapsible-content">
-            <p>Details about research projects.</p>
-        </div>
-    </section>
-
-    <section id="artistic" class="collapsible-section">
-        <h3 class="toggle-trigger" data-toggle-target="#artistic">Artistic</h3>
-        <div class="collapsible-content">
-            <div class="flip-grid">
-
-                <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                    <img src="Images/turbo-granny-dandadan.gif" alt="Placeholder artwork 1">
-                    </div>
-                    <div class="flip-card-back">
-                    <p>Placeholder description for this piece.</p>
-                    <a href="#">View full image</a>
-                    </div>
+    <!-- ART example, with flip-card grid nested inside -->
+    <div class="entry" data-tags="art">
+      <button class="entry-toggle" aria-expanded="false">
+        <span class="entry-title">Example Art Piece</span>
+        <span class="entry-date">1/2026</span>
+        <span class="entry-icon">+</span>
+      </button>
+      <div class="entry-content">
+        <div class="entry-content-inner">
+          <div class="entry-tags">
+            <span class="tag">art</span>
+          </div>
+          <div class="flip-grid">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="Images/turbo-granny-dandadan.gif" alt="Placeholder artwork 1">
                 </div>
+                <div class="flip-card-back">
+                  <p>Placeholder description for this piece.</p>
+                  <a href="#">View full image</a>
                 </div>
-
-                <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                    <img src="Images/turbo-granny-dandadan-hairdryer.gif" alt="Placeholder artwork 2">
-                    </div>
-                    <div class="flip-card-back">
-                    <p>Placeholder description for this piece.</p>
-                    <a href="#">View full image</a>
-                    </div>
-                </div>
-                </div>
-
-                <!-- copy a .flip-card block above to add more -->
-
+              </div>
             </div>
-        </div>
-    </section>
 
-    <section id="tinkering" class="collapsible-section">
-        <h3 class="toggle-trigger" data-toggle-target="#tinkering">Tinkering</h3>
-        <div class="collapsible-content">
-            <p>Details about tinkering projects.</p>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="Images/turbo-granny-dandadan-hairdryer.gif" alt="Placeholder artwork 2">
+                </div>
+                <div class="flip-card-back">
+                  <p>Placeholder description for this piece.</p>
+                  <a href="#">View full image</a>
+                </div>
+              </div>
+            </div>
+            <!-- copy a .flip-card block above to add more -->
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <section id="side-quests" class="collapsible-section">
-        <h3 class="toggle-trigger" data-toggle-target="#side-quests">Side Quests</h3>
-        <div class="collapsible-content">
-            <p>Details about side quests.</p>
+    <!-- TINKERING example -->
+    <div class="entry" data-tags="tinkering">
+      <button class="entry-toggle" aria-expanded="false">
+        <span class="entry-title">Example Tinkering Project</span>
+        <span class="entry-date">1/2026</span>
+        <span class="entry-icon">+</span>
+      </button>
+      <div class="entry-content">
+        <div class="entry-content-inner">
+          <div class="entry-tags">
+            <span class="tag">tinkering</span>
+          </div>
+          <p>A short description of the tinkering project goes here.</p>
+          <a href="#" class="entry-link">Check it out</a>
         </div>
-    </section>
+      </div>
+    </div>
+
+    <!-- SIDE QUESTS example -->
+    <div class="entry" data-tags="side-quests">
+      <button class="entry-toggle" aria-expanded="false">
+        <span class="entry-title">Example Side Quest</span>
+        <span class="entry-date">1/2026</span>
+        <span class="entry-icon">+</span>
+      </button>
+      <div class="entry-content">
+        <div class="entry-content-inner">
+          <div class="entry-tags">
+            <span class="tag">side-quests</span>
+          </div>
+          <p>A short description of the side quest goes here.</p>
+          <a href="#" class="entry-link">Check it out</a>
+        </div>
+      </div>
+    </div>
 
   </main>
 
- {% include footer.html %}
+  {% include footer.html %}
 
 </body>
 </html>

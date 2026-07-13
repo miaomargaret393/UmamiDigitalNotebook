@@ -104,7 +104,6 @@ nav a {
 }
 
 
-
 nav a:hover {
   text-decoration: underline;
 }
@@ -113,4 +112,51 @@ nav a:hover {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: none;
+  border: 2px solid #111;
+  color: #111;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #111;
+  color: #fff;
+}
+
+.entry-tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #333;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.entry.hidden {
+  display: none;
 }
