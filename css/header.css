@@ -4,9 +4,22 @@
    side by side, roughly matching the wireframe.
    ========================================= */
 header {
-  display: flex;
+  display: flex; 
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 1rem;
 }
+
+.title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-icon {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;   /* keeps it square/cropped nicely if the source isn't a perfect square */
+}
+

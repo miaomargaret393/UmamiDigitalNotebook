@@ -84,6 +84,6 @@
 }
 
 .notepad-nav a:hover {
-  color: var(--color-accent);
+  color: var(--color-light--accent, #FFCA95);
   text-decoration: underline;
 }

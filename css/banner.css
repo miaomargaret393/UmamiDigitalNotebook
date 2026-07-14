@@ -1,0 +1,34 @@
+/* =========================================
+   PAGE BANNER
+   Full-width strip above the header.
+   Swap --banner-image per page once real PNGs are ready.
+   ========================================= */
+.page-banner{
+    width: 100%;
+    aspect-ratio: 4/1; /* 4:1 is a good ratio , 1600x 400 pixels */
+    background-color: var(--color-accent, var(--color-coral));
+    background-size: cover; /* cover the entire banner area */
+    background-position: center; /* center the image */
+}
+
+.page-banner--home {
+  background-image: var(--banner-image, url("../Images/banner-sample-1600x400.jpg"));
+}
+
+.page-banner--about {
+  background-image: var(--banner-image, url("../Images/banner-sample-1600x400.jpg"));
+}
+
+.page-banner--projects {
+  background-image: var(--banner-image, url("../Images/banner-sample-1600x400.jpg"));
+}
+
+.page-banner--resume {
+  background-image: var(--banner-image, url("../Images/banner-sample-1600x400.jpg"));
+}
+
+.page-banner--fun-corner {
+  background-image: var(--banner-image, url("../Images/banner-sample-1600x400.jpg"));
+}
+
+
