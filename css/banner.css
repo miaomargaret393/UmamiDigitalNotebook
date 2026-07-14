@@ -5,11 +5,12 @@
    ========================================= */
 .page-banner{
     width: 100vw;
-    height: 200px; 
+    height: 100px; 
     margin-left: calc(50% - 50vw);
     background-size: cover; /* cover the entire banner area */
     background-position: center; /* center the image */
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .page-banner--home {
