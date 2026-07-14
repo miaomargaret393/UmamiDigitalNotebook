@@ -7,6 +7,7 @@
 @import url("collapsible.css");
 @import url("entries.css");
 @import url("filters.css");
+@import url('banner.css');
 
 body {
   background-color: var(--color-bg);
