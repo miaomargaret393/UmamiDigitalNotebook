@@ -13,23 +13,23 @@
 }
 
 .page-banner--home {
-  background-image: var(--banner-image, url("../Images/1600x400_banner_ sample"));
+  background-image: var(--banner-image, url("../Images/1600x400_banner_ sample.jpg"));
 }
 
 .page-banner--about {
-  background-image: var(--banner-image, url("../Images/1600x400_banner_ sample"));
+  background-image: var(--banner-image, url("../Images/1600x400_banner_ sample.jpg"));
 }
 
 .page-banner--projects {
-  background-image: var(--banner-image, url("../Images/1600x400_banner_ sample"));
+  background-image: var(--banner-image, url("../Images/1600x400_banner_ sample.jpg"));
 }
 
 .page-banner--resume {
-  background-image: var(--banner-image, url("../Images/1600x400_banner_ sample"));
+  background-image: var(--banner-image, url("../Images/1600x400_banner_ sample.jpg"));
 }
 
 .page-banner--fun-corner {
-  background-image: var(--banner-image, url("../Images/1600x400_banner_ sample"));
+  background-image: var(--banner-image, url("../Images/1600x400_banner_sample.jpg"));
 }
 
 
