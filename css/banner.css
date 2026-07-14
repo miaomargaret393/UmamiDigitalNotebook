@@ -4,7 +4,7 @@
    Swap --banner-image per page once real PNGs are ready.
    ========================================= */
 .page-banner{
-    width: 100vw;
+    width: 100%;
     height: 100px; 
     background-size: cover; /* cover the entire banner area */
     background-position: center; /* center the image */
