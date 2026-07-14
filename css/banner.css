@@ -4,11 +4,11 @@
    Swap --banner-image per page once real PNGs are ready.
    ========================================= */
 .page-banner{
-    gap: 1rem;
     width: 100%;
-    aspect-ratio: 200 px; 
+    height: 200 px; 
     background-size: cover; /* cover the entire banner area */
     background-position: center; /* center the image */
+    margin-top: 2rem
 }
 
 .page-banner--home {

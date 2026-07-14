@@ -20,7 +20,7 @@
   padding: 1rem 1.25rem;
   max-width: 220px;
 
-  position: fixed;
+  position: sticky;
   top: 1rem;
   right: calc((100vw - var(--content-max-width)) / 2 + 1rem);
   z-index: 100;
