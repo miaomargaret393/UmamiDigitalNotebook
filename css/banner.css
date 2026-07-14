@@ -4,9 +4,9 @@
    Swap --banner-image per page once real PNGs are ready.
    ========================================= */
 .page-banner{
+    gap: 1rem;
     width: 100%;
-    aspect-ratio: 4/1; /* 4:1 is a good ratio , 1600x 400 pixels */
-    background-color: var(--color-accent, var(--color-coral));
+    aspect-ratio: 200 px; 
     background-size: cover; /* cover the entire banner area */
     background-position: center; /* center the image */
 }
