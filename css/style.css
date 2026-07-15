@@ -16,3 +16,7 @@ body {
   padding: 0 1.5rem;
   overflow-x: hidden;
 }
+
+.text-box{
+  max-width: 500px;
+}
