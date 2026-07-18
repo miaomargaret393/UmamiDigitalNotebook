@@ -51,6 +51,10 @@
   transition: grid-template-rows 0.4s ease;
 }
 
+.entry-content-inner p {
+  max-width: none;
+}
+
 .entry-toggle[aria-expanded="true"] + .entry-content {
   grid-template-rows: 1fr; /* expanded */
 }
