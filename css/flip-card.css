@@ -62,3 +62,15 @@
 .flip-card-back a {
   color: var(--color-accent);
 }
+
+.flip-card-back .view-original {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.flip-card-back .view-original:hover {
+  opacity: 0.7;
+}
