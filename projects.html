@@ -73,47 +73,8 @@
 
     {% include project_entries/Research/Harvard_REU_summer_2024.html %}
 
-    <!-- ART example, with flip-card grid nested inside -->
-    <div class="entry" data-tags="art">
-      <button class="entry-toggle" aria-expanded="false">
-        <span class="entry-title">Example Art Piece</span>
-        <span class="entry-date">1/2026</span>
-        <span class="entry-icon">+</span>
-      </button>
-      <div class="entry-content">
-        <div class="entry-content-inner">
-          <div class="entry-tags">
-            <span class="tag" data-tag="art">art</span>
-          </div>
-          <div class="flip-grid">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="Images/turbo-granny-dandadan.gif" alt="Placeholder artwork 1">
-                </div>
-                <div class="flip-card-back">
-                  <p>Placeholder description for this piece.</p>
-                  <a href="#">View full image</a>
-                </div>
-              </div>
-            </div>
+    {% include project_entries/Art/ap_art.html %}
 
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="Images/turbo-granny-dandadan-hairdryer.gif" alt="Placeholder artwork 2">
-                </div>
-                <div class="flip-card-back">
-                  <p>Placeholder description for this piece.</p>
-                  <a href="#">View full image</a>
-                </div>
-              </div>
-            </div>
-            <!-- copy a .flip-card block above to add more -->
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- TINKERING example -->
     <div class="entry" data-tags="tinkering">
