@@ -26,23 +26,9 @@
             <button class="filter-btn" data-filter="movies">Movies</button>
         </div>
 
-        <div class="entry" data-tags="movies">
-            <button class="entry-toggle" aria-expanded="false">
-                <span class="entry-title">Backrooms Review</span>
-                <span class="entry-date">7/12/2026</span>
-                <span class="entry-icon">+</span>
-            </button>
+        {% include Fun_Corner/Movies/backrooms.html %}
 
-            <div class="entry-content">
-                <div class="entry-content-inner">
-                    <div class="entry-tags">
-                        <span class="tag" data-tag="movies">Movies</span>
-                    </div>
-                    <p>Backrooms movie was gas. I loved the set design, symbolism of the backrooms as a physical manifestation of unresolved memories.</p>
-                    <img src="Images/backrooms.webp" alt="Backrooms Movie" class="entry-image">
-                </div>
-            </div>
-        </div>
+
     </main>
 
     {% include footer.html %}
