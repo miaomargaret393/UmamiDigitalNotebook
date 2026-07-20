@@ -30,5 +30,5 @@ h1, h2, p {
 }
 
 main p {
-  max-width: 65ch;
+ max-width: none;
 }
