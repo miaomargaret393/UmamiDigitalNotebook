@@ -110,9 +110,18 @@
 .entry-image--landscape {
   aspect-ratio: 4 / 3;
   max-height: none;
+  max-width: 500px;
 }
 
 .entry-image--portrait {
   aspect-ratio: 3 / 4;
   max-height: none;
+  max-width: 320px;
+}
+
+.entry-image--landscape,
+.entry-image--portrait {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
