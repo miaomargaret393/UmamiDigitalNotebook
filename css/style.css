@@ -8,6 +8,7 @@
 @import url("entries.css");
 @import url("filters.css");
 @import url('banner.css');
+@import url("gallery_static.css");
 
 body {
   background-color: var(--color-bg);

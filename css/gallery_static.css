@@ -1,0 +1,30 @@
+/* =========================================
+   STATIC GALLERY
+   Simple image grid, no flip interaction.
+   Images keep their natural aspect ratio,
+   scaled to fit within a max size.
+   ========================================= */
+.static-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.static-gallery-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 320px;
+  max-height: 320px;
+  border-radius: 6px;
+  border: 1px solid #e0dcc8;
+  overflow: hidden;
+}
+
+.static-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
