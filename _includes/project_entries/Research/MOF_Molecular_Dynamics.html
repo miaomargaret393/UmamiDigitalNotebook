@@ -1,0 +1,93 @@
+<div class="entry" data-tags="research">
+      <button class="entry-toggle" aria-expanded="false">
+        <span class="entry-title">Quantifying MOF CO2 Adsorption Thermal Dynamics</span>
+        <span class="entry-date">5/2026</span>
+        <span class="entry-icon">+</span>
+      </button>
+      <div class="entry-content">
+        <div class="entry-content-inner">
+          <div class="entry-tags">
+            <span class="tag" data-tag="research">research</span>
+        </div>
+
+            <p>This project, <i>Quantifying Metal-Organic Framework (MOF) CO2 Adsorption Thermal Dynamics</i>, was done as a part of CBE423/MSE 423: Computational 
+            Materials Design and Discovery's final project, which consisted of a self-led computational project to investigate a research question regarding the 
+            unmet gaps that computational material discovery needs.</p>
+
+            <p>For the longest time, people have been using static density functional theory (DFT) to model how CO2 binds to metal-organic frameworks (MOFs) — porous, 
+            tunable materials that are a big deal for carbon capture. DFT is accurate but expensive, and it only really gives you a snapshot at 0K, so it can't 
+            capture how binding actually behaves once you add realistic temperatures and motion into the picture. Molecular dynamics (MD) can simulate that thermal 
+            behavior over time, but running it with full DFT accuracy is <i>very</i> slow, which is where machine-learned interatomic potentials (MLIPs) come in! 
+            They're trained on huge DFT datasets and let you get DFT-level accuracy at a fraction of the compute cost.</p>
+
+            <p>In this project, we used the UMA-ODAC MLIP (trained specifically with MOFs) to study CO2 adsorption in Mg-MOF-74, a well-studied carbon capture MOF, 
+            first calculating static binding energies across all its metal sites, then running MD simulations from 300K to 1000K to watch how the CO2's 
+            binding behavior changed with temperature. We found that as temperature increases, CO2 starts "hopping" between metal sites instead of staying put, 
+            and that this desorption is driven mainly by the molecule drifting away rather than any real change in the binding geometry itself, 
+            a trend that lined up nicely with real experimental desorption temperatures.</p>
+
+            <p>This project is done in collaboration with Chris Li (CEE '26) and Brendan Archer (MAE'26).</p>
+
+            <p>Check out the project below!</p>
+            
+            
+            <div class="static-gallery">
+              <div class="static-gallery-item">
+                <a href="pdfs_attachments/CBE423_Final_Project_Report.pdf" target="_blank" rel="noopener noreferrer" class="gallery-link">
+                  <img src="Images/projects_pictures/Research/cbe423finalproj/cbe423_final_project_poster.png" alt="View Report">
+                  <span class="gallery-overlay">View PDF</span>
+                </a>
+              </div>
+            </div>
+
+           
+          <!--Gallery-->
+        <div class="flip-grid">
+            <!--first card-->
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="Images/projects_pictures/Research/cbe423finalproj/6md_sitegui_1000K.gif" alt="6CO2 hopping behavior observed between the Mg sites at 1000K.">
+                </div>
+                <div class="flip-card-back">
+                  <p>CO2 hopping behavior observed between the Mg sites at 1000K, total time: 5 ns.</p>
+                  <a href="Images/projects_pictures/Research/cbe423finalproj/6md_sitegui_1000K.gif" target="_blank" rel="noopener noreferrer" class="view-original">View full image</a>
+                </div>
+              </div>
+            </div>
+            
+           <!--second card-->
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="Images/projects_pictures/Research/cbe423finalproj/hopping.png" alt="Hopping behavior observed at different Temperatures.">
+                </div>
+                <div class="flip-card-back">
+                  <p> Top shows CO2 hopping behavior at 750K, showing the transient and unstable binding as temperatures increase. Bottom shows the heat map trajectories, 
+                    with at low temperatures showing stable and minimal movement while at high temperatures, the hopping behavior increases and the CO2 molecule moves more.</p>
+                  <a href="Images/projects_pictures/Research/cbe423finalproj/hopping.png" target="_blank" rel="noopener noreferrer" class="view-original">View full image</a>
+                </div>
+              </div>
+            </div>
+
+
+            <!--third card-->
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="Images/projects_pictures/Research/cbe423finalproj/mean_bE_mean_bD.png" alt="Left plots MBE while the right plots Mean Mg-O distance across the entire temperature sweep.">
+                </div>
+                <div class="flip-card-back">
+                  <p> Left plots MBE while the right plots Mean Mg-O distance across the entire temperature sweep.</p>
+                  <a href="Images/projects_pictures/Research/cbe423finalproj/mean_bE_mean_bD.png" target="_blank" rel="noopener noreferrer" class="view-original">View full image</a>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+
+
+        </div>
+      </div>
+    </div>
