@@ -106,3 +106,13 @@
   border-radius: 12px;
   margin-top: 12px;
 }
+
+.entry-image--landscape {
+  aspect-ratio: 4 / 3;
+  max-height: none;
+}
+
+.entry-image--portrait {
+  aspect-ratio: 3 / 4;
+  max-height: none;
+}
