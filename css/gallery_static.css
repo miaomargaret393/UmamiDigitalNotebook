@@ -3,6 +3,7 @@
    Simple image grid, no flip interaction.
    Images keep their natural aspect ratio,
    scaled to fit within a max size.
+   Hover reveals a "view full image" overlay.
    ========================================= */
 .static-gallery {
   display: grid;
@@ -12,6 +13,7 @@
 }
 
 .static-gallery-item {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,9 +24,39 @@
   overflow: hidden;
 }
 
+.static-gallery-item:only-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
 .static-gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   display: block;
+}
+
+.gallery-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.gallery-link:hover .gallery-overlay {
+  opacity: 1;
 }
