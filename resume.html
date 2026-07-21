@@ -21,33 +21,14 @@
     <h2>Interactive Resume</h2>
     <p>Check out my interactive resume! For specific details on research and portfolio specific items, please visit the <a href="projects.html">Projects</a> page.</p>
 
-    <section id="leadership" class="collapsible-section">
-      <h3 class="toggle-trigger" data-toggle-target="#leadership">Leadership</h3>
-      <div class="collapsible-content">
-        <p>Details about leadership experience.</p>
-      </div>
-    </section>
+    {% include Resume/Leadership.html %}
 
-    <section id="work" class="collapsible-section">
-      <h3 class="toggle-trigger" data-toggle-target="#work">Work Experience</h3>
-      <div class="collapsible-content">
-        <p>Details about work experience.</p>
-      </div>
-    </section>
+    {% include Resume/Work.html %}
 
-    <section id="awards" class="collapsible-section">
-      <h3 class="toggle-trigger" data-toggle-target="#awards">Awards and Recognition</h3>
-      <div class="collapsible-content">
-        <p>Details about awards.</p>
-      </div>
-    </section>
+    {% include Resume/Awards_Recognition.html %}
 
-    <section id="education" class="collapsible-section">
-      <h3 class="toggle-trigger" data-toggle-target="#education">Education</h3>
-      <div class="collapsible-content">
-        <p>Details about education.</p>
-      </div>
-    </section>
+    {% include Resume/Education.html %}
+    
 
     <p> For a one-page resume, please view the <a href="one-page-resume.html">One-Page Resume</a>.</p>
   </main>
