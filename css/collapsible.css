@@ -16,7 +16,14 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  margin: 0;
+  padding: 8px 0;
 }
+
+.collapsible-section {
+  margin-bottom: 8px; /* adjust to taste */
+}
+
 
 .collapsible-section h3:hover {
   color: var(--color-accent);
