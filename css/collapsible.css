@@ -13,6 +13,9 @@
   font-weight: bold;
   color: #4a4032;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .collapsible-section h3:hover {
@@ -21,12 +24,33 @@
 }
 
 /* -----------------------------------------
-   Content (hidden by default, shown when .open)
+   Arrow indicator (placeholder — swap for PNG later)
+   ----------------------------------------- */
+.collapsible-section h3::before {
+  content: "▶";
+  display: inline-block;
+  font-size: 0.8em;
+  transition: transform 0.4s ease;
+}
+
+.collapsible-section.open h3::before {
+  transform: rotate(90deg);
+}
+
+/* -----------------------------------------
+   Content (smooth grid-based collapse/expand)
    ----------------------------------------- */
 .collapsible-content {
-  display: none;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s ease;
 }
 
 .collapsible-section.open .collapsible-content {
-  display: block;
+  grid-template-rows: 1fr;
+}
+
+.collapsible-content > * {
+  overflow: hidden;
+  min-height: 0;
 }
