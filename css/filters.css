@@ -37,6 +37,14 @@
   letter-spacing: 0.03em;
 }
 
+.project-intro {
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  margin: 0;
+}
+
 /* ============================
    TAG COLOR CONFIG
    Add one line here per new tag.
