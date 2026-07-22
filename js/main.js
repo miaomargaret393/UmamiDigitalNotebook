@@ -29,3 +29,23 @@ filterButtons.forEach(btn => {
     });
   });
 });
+
+// expand entry from URL hash (e.g. projects.html#gsrc-designs)
+window.addEventListener('DOMContentLoaded', () => {
+  if (window.location.hash) {
+    const targetId = window.location.hash.substring(1);
+    const targetEntry = document.getElementById(targetId);
+
+    if (targetEntry) {
+      const toggleBtn = targetEntry.querySelector('.entry-toggle');
+      if (toggleBtn) {
+        toggleBtn.setAttribute('aria-expanded', 'true');
+      }
+
+      // scroll into view after the expand transition finishes
+      setTimeout(() => {
+        targetEntry.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    }
+  }
+});
