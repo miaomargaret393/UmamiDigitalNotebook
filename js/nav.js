@@ -18,3 +18,4 @@ document.querySelectorAll('.nav-toggle').forEach(function (button) {
   });
 
 });
+
