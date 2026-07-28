@@ -4,9 +4,16 @@
    Footer-specific colors are scoped to
    .site-footer so they don't leak globally.
    ========================================= */
+
 .site-footer {
   --footer-accent: var(--color-coral);
   --footer-accent-hover: var(--color-magenta);
+  --footer-height: var(--section-height);
+
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  min-height: var(--footer-height);
 
   margin-top: 3rem;
   padding: 1.5rem 1rem;

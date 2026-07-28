@@ -3,13 +3,17 @@
    Full-width strip above the header.
    Swap --banner-image per page once real PNGs are ready.
    ========================================= */
-.page-banner{
-    width: 100%;
-    height: 100px; 
-    background-size: cover; /* cover the entire banner area */
-    background-position: center; /* center the image */
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.page-banner {
+  /* banner.css */
+
+  --banner-height: var(--section-height);
+
+  width: 100%;
+  height: var(--banner-height);
+  background-size: cover;
+  background-position: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .page-banner--home {
@@ -31,5 +35,3 @@
 .page-banner--fun-corner {
   background-image: var(--banner-image, url("../Images/1600x400_banner_sample.jpg"));
 }
-
-
